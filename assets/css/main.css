@@ -1,7 +1,335 @@
 /* =================== GOOGLE FONTS =================== */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+
+
 /* =================== ROOT STYLES =================== */
+* {
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+
 /* =================== COMMON STYLES =================== */
+.btn-primary, .btn-secondary, .btn-light {
+    color: #fff;
+    border: 0;
+    border-radius: 20px;
+    padding: 20px 40px;
+}
+
+.btn-primary {
+    background-color: #FF42A5;
+}
+
+.btn-secondary {
+    background-color: #4EC5F7;
+}
+
+.btn-light {
+    background-color: #FFF;
+}
+
+.text-highlight {
+    color: #FF42A5;
+}
+
+.text-light-gray {
+    color: #534C64;
+}
+
+.text-gradiant {
+    background: rgb(135, 88, 241);
+    background: linear-gradient(0deg, rgba(135, 88, 241, 1) 0%, rgba(249, 72, 160, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.section-description {
+    font-size: 1.125rem;
+}
+
+.max-width {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-light {
+    color: #fff;
+}
+
+.text-upper {
+    text-transform: uppercase;
+}
+
+.text-primary {
+    color: #FF42A5;
+}
+
+.fw-bold {
+    font-weight: 700;
+}
+
 /* =================== HEADER STYLES =================== */
+header {
+    box-shadow: 0 4px 6px -6px #222;
+}
+.nav-conainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    padding: 20px 0px;
+    margin: 0 auto;
+}
+
+.brand-logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav .brand-logo img {
+    height: 40px;
+    width: 85px;
+}
+
+nav .logo-text {
+    font-size: 2.813;
+    font-weight: 700;
+}
+
+nav .nav-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-items li {
+    list-style: none;
+    font-size: 1.125rem;
+    color: #3C354F;
+}
+
+.nav-items li a {
+    text-decoration: none;
+}
+
+.nav-items .follow {
+    background-color: #0b022346;
+    padding: 16px 24px;
+    border-radius: 8px;
+}
+
+nav .youtube {
+    color: #F61C0D;
+    margin-right: 10px;
+}
+ 
+
+
 /* =================== MAIN SECTION STYLES =================== */
+/* BANNER */
+.banner-container {
+    background-image: url("../images/Group 14.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-play-text {
+    font-size: 3rem;
+}
+
+.banner-content .goat {
+    font-size: 5.938rem;
+    font-weight: 800;
+}
+
+.download-info {
+    font-size: 1.25rem;
+    margin: 30px 0;
+}
+
+.banner-content i {
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+.btn-group {
+    margin: 0 auto;
+}
+
+.banner-img-container img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* GAMERS SECTION */
+.gamers-container {
+    background-color: #ff42a40a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.gamers-container img {
+    width: 50%;
+}
+
+.gamers-purpose {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.gamers-qout {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* ONLINE GAMES */
+.online-games {
+    margin-top: 100px;
+}
+
+.online-games-info {
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 40px 50px;
+}
+
+.card {
+    height: 485px;
+    width: 340px;
+}
+
+.card img {
+    width: 100%;
+    height: 90%;
+}
+
+.online-games-info p, .card p {
+    margin-top: 10px;
+}
+
+/* PLAY GAMES */
+.play-games {
+    margin-bottom: 100px;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 250px;
+}
+
+.play-games-content {
+    width: 50%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.play-games-img {
+    width: 50%;
+    position: relative;
+}
+
+.play-games-img img {
+    width: 100%;
+}
+
+.badge {
+    position: absolute;
+    top: 250px;
+    left: -100px;
+    width: 300px;
+    height: 350px;
+}
+
+.badge img {
+    width: 100%;
+}
+
+/* CAREER */
+.career-container {
+    margin-top: 200px;
+    background-repeat: no-repeat;
+    background: url("../images/Group 14.png"), #FF42A5;
+    background-blend-mode: screen;
+    background-position: left top;
+    background-size: contain;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.career-content {
+    width: 50%;
+    padding-left: 100px;
+}
+
+.career-positions {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.career-img {
+    width: 50%;
+}
+
+.career-img img {
+    width: 100%;
+}
+
+/* GAME CATEGORIES */
+.game-categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: #fff9fc;
+    padding: 100px;
+}
+
+.game-category {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 5px 10px;
+    background-color: #FFF;
+    border-radius: 50px;
+}
+
+.game-category-name {
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
 /* =================== FOOTER STYLES =================== */
 /* =================== MEDIA QUERY =================== */
