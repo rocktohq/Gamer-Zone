@@ -19,6 +19,7 @@
     border: 0;
     border-radius: 20px;
     padding: 20px 40px;
+    cursor: pointer;
 }
 
 .btn-primary {
@@ -86,6 +87,7 @@
 header {
     box-shadow: 0 4px 6px -6px #222;
 }
+
 .nav-conainer {
     display: flex;
     justify-content: space-between;
@@ -95,7 +97,8 @@ header {
     margin: 0 auto;
 }
 
-.brand-logo {
+.brand-logo,
+.footer-logo {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -324,6 +327,20 @@ nav .youtube {
     padding: 5px 10px;
     background-color: #FFF;
     border-radius: 50px;
+    border: 1px solid #FFF;
+}
+
+.hover-active {
+    border: 1px solid #FF42A5;
+    color: #FF42A5;
+}
+
+.game-category:hover .game-category-name {
+    color: #FF42A5;
+}
+
+.game-category:hover {
+    border: 1px solid #FF42A5;
 }
 
 .game-category-name {
@@ -332,4 +349,39 @@ nav .youtube {
 }
 
 /* =================== FOOTER STYLES =================== */
+.footer-container {
+    background-color: #0B0223;
+    padding: 100px 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-nav,
+.footer-policies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.footer-nav li,
+.footer-policies li {
+    list-style: none;
+}
+
+.footer-nav li a {
+    text-decoration: none;
+    font-size: 1.125rem;
+}
+
+.social-links i {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-right: 20px;
+}
+
 /* =================== MEDIA QUERY =================== */
