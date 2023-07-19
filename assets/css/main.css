@@ -34,6 +34,18 @@
     background-color: #FFF;
 }
 
+.btn-primary:hover {
+    background-color: #FF2796;
+}
+
+.btn-secondary:hover {
+    background-color: #00B3FF;
+}
+
+.btn-light:hover {
+    background-color: #E6E6E6;
+}
+
 .text-highlight {
     color: #FF42A5;
 }
