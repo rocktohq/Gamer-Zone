@@ -252,7 +252,6 @@ nav .youtube {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 250px;
 }
 
 .play-games-content {
@@ -263,19 +262,18 @@ nav .youtube {
 
 .play-games-img {
     width: 50%;
-    position: relative;
 }
 
 .play-games-img img {
-    width: 100%;
+    width: calc( 100% - 100px);
+    margin-left: 100px;
 }
 
-.badge {
-    position: absolute;
-    top: 250px;
-    left: -100px;
+.play-games .badge {
+    position: relative;
     width: 300px;
-    height: 350px;
+    bottom: 100px;
+    left: -100px;
 }
 
 .badge img {
@@ -428,6 +426,7 @@ nav .youtube {
 
     .gamers-container img,
     .play-games-content,
+    .play-games-img,
     .career-content,
     .career-positions,
     .career-img
@@ -444,14 +443,18 @@ nav .youtube {
     }
 
     .play-games-img {
-        width: 90%;
+        width: 100%;
     }
 
-    .badge {
-        top: 250px;
-        left: -50px;
+    .play-games-img img {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .play-games .badge {
+        height: 150px;
         width: 150px;
-        height: 200px;
+        left: -50px;
     }
 
     .career-container {
