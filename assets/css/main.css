@@ -379,7 +379,7 @@ nav .youtube:hover {
     flex-wrap: wrap;
     gap: 20px;
     background-color: #fff9fc;
-    padding: 100px 50px;
+    padding: 100px 20px;
 }
 
 .game-category {
@@ -406,7 +406,7 @@ nav .youtube:hover {
 }
 
 .game-category-name {
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-weight: 600;
 }
 
