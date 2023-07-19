@@ -350,8 +350,10 @@ nav .youtube {
 
 /* GAME CATEGORIES */
 .game-categories {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 20px;
     background-color: #fff9fc;
     padding: 100px 50px;
@@ -503,18 +505,6 @@ nav .youtube {
         place-items: center;
     }
 
-    .game-category {
-        padding: 5px   
-    }
-
-    .game-category img {
-        width: 70%;
-    }
-
-    .game-category-name {
-        font-size: 1rem;
-    }
-
     .career-content {
         padding-left: 0px;
     }
@@ -538,13 +528,8 @@ nav .youtube {
     }
 
     .banner-container {
-        flex-direction: column-reverse;
-        background-position: bottom left;
-        margin: 0 30px;
-    }
-
-    .banner-content {
-        margin: 40px 0;
+        margin: 40px 10px;
+        padding: 10px;
     }
 
     .gamers-container {
